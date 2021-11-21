@@ -1,5 +1,7 @@
 # Python Backend Developer Roadmap 
 
+This roadmap is intended for junior software engineers in my company or newcomers in my team for onboarding purposes. Generally, this is for Python Backend Web Developer with a speciality in Instant Messager using [Matrix](matrix.org). 
+
 ## 1. Basic Internet, Operating System and Frontend Knowledge
 ###	1.1 Bash/Terminal
 - SSH
@@ -46,7 +48,7 @@
 - list
 - queue
 - stack
-- tree, 
+- tree
 - dictionary 
 - tuple 
 - hash map
@@ -58,7 +60,7 @@
 ### 2.5 Environment & environment manager 
 - pip
 - env & venv
-- conda
+- [conda](https://docs.anaconda.com/anaconda/user-guide/getting-started/)
 - resources
 	- [python environment manager](https://www.section.io/engineering-education/introduction-to-virtual-environments-and-dependency-managers/)
 	- [env](https://docs.python.org/3/tutorial/venv.html)
@@ -76,10 +78,11 @@
 ### 2.8 Python Framework (web)
 - [FastAPI](https://fastapi.tiangolo.com/) 
 - [Flask ](https://flask.palletsprojects.com/en/2.0.x/tutorial/index.html)
+- [Django](https://www.djangoproject.com/)
 
 ### 2.9 Unit Testing 
 - [pytest](https://docs.pytest.org/en/6.2.x/)
--
+- Unittest
 
 ### 2.10 Important Library 
 - numpy 
@@ -213,10 +216,11 @@
 ### 13.3 [STOMP](https://jasonrbriggs.github.io/stomp.py/)
 ### 13.4 WEbRTC
 ### 13.5 Http Request
+### 13.6 [gRPC](https://grpc.io/docs/languages/python/basics/)
 
 ## 14. [Monitoring](https://www.pcwdld.com/best-python-monitoring-tools)
 ### 14.1 Engine 
 - [Grafana](https://grafana.com/)
 - [Datadog](https://www.datadoghq.com/)
 - [Prometheus](https://prometheus.io/)
-
+- Sentry
