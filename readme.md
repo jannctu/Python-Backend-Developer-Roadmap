@@ -272,13 +272,40 @@
 ### 15.1 Model Serving
 - [BentoML](https://bentoml.com/), [MLflow](https://mlflow.org/)
 - FastAPI + ML integration
+- [HuggingFace Inference API](https://huggingface.co/inference-api)
 
 ### 15.2 Prompt Engineering & LLMs
 - Basics of prompt engineering
-- LLM APIs (OpenAI, Anthropic, etc.)
+- Understanding Large Language Models (LLMs)
+- LLM APIs (OpenAI, Anthropic, Claude, etc.)
+- Using pre-trained models
+- [LangChain](https://python.langchain.com/) - Framework for LLM applications
+- [LlamaIndex](https://www.llamaindex.ai/) - Data framework for LLM applications
 
-### 15.3 Vector Databases
+### 15.3 Vector Databases & Embeddings
 - [Pinecone](https://www.pinecone.io/), [Weaviate](https://weaviate.io/), [Qdrant](https://qdrant.tech/)
+- [ChromaDB](https://www.trychroma.com/) - Open-source embedding database
+- [FAISS](https://github.com/facebookresearch/faiss) - Facebook AI Similarity Search
+- Text embeddings with OpenAI, Cohere, or HuggingFace
+
+### 15.4 RAG (Retrieval-Augmented Generation)
+- Understanding RAG architecture
+- Document processing & chunking
+- Semantic search implementation
+- Context retrieval strategies
+
+### 15.5 AI Agents & Orchestration
+- Building AI agents with LangChain
+- Agent frameworks: [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [BabyAGI](https://github.com/yoheinakajima/babyagi)
+- Multi-agent systems
+- Tool/function calling with LLMs
+
+### 15.6 AI/ML Libraries & Tools
+- [OpenAI Python SDK](https://github.com/openai/openai-python)
+- [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python)
+- [Transformers](https://huggingface.co/docs/transformers/index) - HuggingFace library
+- [LangSmith](https://www.langchain.com/langsmith) - LLM observability & testing
+- [Guardrails AI](https://github.com/guardrails-ai/guardrails) - LLM output validation
 
 ---
 
