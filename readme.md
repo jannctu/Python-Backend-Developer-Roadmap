@@ -269,43 +269,117 @@
 
 ## 15. 🤖 AI/ML Integration
 
-### 15.1 Model Serving
-- [BentoML](https://bentoml.com/), [MLflow](https://mlflow.org/)
-- FastAPI + ML integration
+### 15.1 Model Serving & Deployment
+- [BentoML](https://bentoml.com/) - Unified model serving framework
+- [MLflow](https://mlflow.org/) - End-to-end ML lifecycle management
+- [TorchServe](https://pytorch.org/serve/) - PyTorch model serving
+- [TensorFlow Serving](https://www.tensorflow.org/tfx/guide/serving) - Production ML serving system
+- FastAPI + ML integration ([Tutorial](https://testdriven.io/blog/fastapi-machine-learning/))
 - [HuggingFace Inference API](https://huggingface.co/inference-api)
+- [Seldon Core](https://www.seldon.io/) - Kubernetes-native ML deployment
+- [KServe](https://kserve.github.io/website/) - Serverless inferencing on Kubernetes
 
 ### 15.2 Prompt Engineering & LLMs
-- Basics of prompt engineering
-- Understanding Large Language Models (LLMs)
-- LLM APIs (OpenAI, Anthropic, Claude, etc.)
-- Using pre-trained models
-- [LangChain](https://python.langchain.com/) - Framework for LLM applications
+- [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
+- [Prompt Engineering Guide by DAIR.AI](https://www.promptingguide.ai/)
+- Understanding Large Language Models - [LLM Course](https://github.com/mlabonne/llm-course)
+- LLM APIs: [OpenAI](https://platform.openai.com/docs/api-reference), [Anthropic Claude](https://docs.anthropic.com/), [Google Gemini](https://ai.google.dev/), [Cohere](https://docs.cohere.com/)
+- Open-source LLMs: [Llama 3](https://llama.meta.com/), [Mistral](https://mistral.ai/), [Falcon](https://falconllm.tii.ae/)
+- [LangChain](https://python.langchain.com/) - Framework for LLM applications ([Tutorial](https://python.langchain.com/docs/get_started/quickstart))
 - [LlamaIndex](https://www.llamaindex.ai/) - Data framework for LLM applications
+- [Haystack](https://haystack.deepset.ai/) - End-to-end NLP framework
+- [DSPy](https://github.com/stanfordnlp/dspy) - Framework for programming foundation models
+- [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/) - Microsoft's LLM orchestration SDK
 
 ### 15.3 Vector Databases & Embeddings
-- [Pinecone](https://www.pinecone.io/), [Weaviate](https://weaviate.io/), [Qdrant](https://qdrant.tech/)
-- [ChromaDB](https://www.trychroma.com/) - Open-source embedding database
+- [Pinecone](https://www.pinecone.io/) - Managed vector database ([Python SDK](https://docs.pinecone.io/docs/python-client))
+- [Weaviate](https://weaviate.io/) - Open-source vector search engine ([Python Client](https://weaviate.io/developers/weaviate/client-libraries/python))
+- [Qdrant](https://qdrant.tech/) - High-performance vector database ([Python SDK](https://qdrant.tech/documentation/quick-start/))
+- [ChromaDB](https://www.trychroma.com/) - Open-source embedding database ([Docs](https://docs.trychroma.com/))
+- [Milvus](https://milvus.io/) - Cloud-native vector database ([Getting Started](https://milvus.io/docs/install_standalone-docker.md))
+- [pgvector](https://github.com/pgvector/pgvector) - Vector similarity search for PostgreSQL
 - [FAISS](https://github.com/facebookresearch/faiss) - Facebook AI Similarity Search
-- Text embeddings with OpenAI, Cohere, or HuggingFace
+- [LanceDB](https://lancedb.com/) - Serverless vector database
+- Embedding models: [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings), [Cohere Embed](https://docs.cohere.com/docs/embeddings), [Sentence Transformers](https://www.sbert.net/)
+- [Voyage AI](https://www.voyageai.com/) - Embedding models optimized for RAG
 
 ### 15.4 RAG (Retrieval-Augmented Generation)
-- Understanding RAG architecture
-- Document processing & chunking
-- Semantic search implementation
-- Context retrieval strategies
+- [RAG Overview by LangChain](https://python.langchain.com/docs/use_cases/question_answering/)
+- [Building RAG Applications](https://www.pinecone.io/learn/retrieval-augmented-generation/)
+- [Advanced RAG Techniques](https://github.com/ray-project/llm-applications/tree/main/rag)
+- Document loaders & processing: [Unstructured](https://github.com/Unstructured-IO/unstructured), [PyPDF](https://pypdf.readthedocs.io/)
+- Text chunking strategies - [Guide](https://www.pinecone.io/learn/chunking-strategies/)
+- Semantic search implementation with embeddings
+- Context retrieval & reranking: [Cohere Rerank](https://docs.cohere.com/docs/reranking), [Jina Reranker](https://jina.ai/reranker)
+- [RAGFlow](https://github.com/infiniflow/ragflow) - Open-source RAG engine
+- Evaluation: [RAGAS](https://docs.ragas.io/) - RAG Assessment framework
 
 ### 15.5 AI Agents & Orchestration
-- Building AI agents with LangChain
-- Agent frameworks: [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [BabyAGI](https://github.com/yoheinakajima/babyagi)
-- Multi-agent systems
-- Tool/function calling with LLMs
+- [LangGraph](https://langchain-ai.github.io/langgraph/) - Build stateful, multi-actor LLM applications
+- Building AI agents with LangChain - [Guide](https://python.langchain.com/docs/modules/agents/)
+- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Autonomous AI agent
+- [BabyAGI](https://github.com/yoheinakajima/babyagi) - AI-powered task management
+- [CrewAI](https://github.com/joaomdmoura/crewAI) - Framework for orchestrating AI agents
+- [AutoGen](https://microsoft.github.io/autogen/) - Microsoft's multi-agent conversation framework
+- Multi-agent systems & collaboration patterns
+- Tool/function calling with LLMs - [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling)
+- [Phidata](https://docs.phidata.com/) - Build AI assistants with memory and tools
+- [Pandas AI](https://pandas-ai.readthedocs.io/) - Conversational data analysis
 
 ### 15.6 AI/ML Libraries & Tools
-- [OpenAI Python SDK](https://github.com/openai/openai-python)
-- [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python)
-- [Transformers](https://huggingface.co/docs/transformers/index) - HuggingFace library
-- [LangSmith](https://www.langchain.com/langsmith) - LLM observability & testing
-- [Guardrails AI](https://github.com/guardrails-ai/guardrails) - LLM output validation
+- [OpenAI Python SDK](https://github.com/openai/openai-python) - Official OpenAI library
+- [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python) - Claude API client
+- [Google Generative AI](https://github.com/google/generative-ai-python) - Gemini API
+- [Transformers](https://huggingface.co/docs/transformers/index) - HuggingFace state-of-the-art ML library
+- [LangSmith](https://www.langchain.com/langsmith) - LLM observability & testing platform
+- [Weights & Biases](https://wandb.ai/) - ML experiment tracking
+- [Comet ML](https://www.comet.com/) - ML experiment management
+- [Guardrails AI](https://github.com/guardrails-ai/guardrails) - LLM output validation & guardrails
+- [LiteLLM](https://github.com/BerriAI/litellm) - Unified interface for 100+ LLMs
+- [Instructor](https://github.com/jxnl/instructor) - Structured outputs from LLMs
+- [Guidance](https://github.com/guidance-ai/guidance) - Programming paradigm for LLMs
+- [Outlines](https://github.com/outlines-dev/outlines) - Structured text generation
+
+### 15.7 Computer Vision & Multimodal AI
+- [OpenCV](https://opencv.org/) - Computer vision library ([Python Tutorial](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html))
+- [Pillow (PIL)](https://pillow.readthedocs.io/) - Python Imaging Library
+- [Ultralytics YOLOv8](https://docs.ultralytics.com/) - Real-time object detection
+- [MMDetection](https://github.com/open-mmlab/mmdetection) - Object detection toolbox
+- [SAM (Segment Anything)](https://github.com/facebookresearch/segment-anything) - Meta's segmentation model
+- Multimodal models: [CLIP](https://github.com/openai/CLIP), [GPT-4 Vision](https://platform.openai.com/docs/guides/vision), [Gemini Vision](https://ai.google.dev/tutorials/python_quickstart)
+- [Roboflow](https://roboflow.com/) - Computer vision deployment platform
+- Image generation: [Stable Diffusion](https://github.com/Stability-AI/stablediffusion), [DALL-E API](https://platform.openai.com/docs/guides/images)
+
+### 15.8 Fine-tuning & Model Training
+- [Fine-tuning LLMs Guide](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl)
+- [Parameter-Efficient Fine-Tuning (PEFT)](https://huggingface.co/docs/peft/index)
+- [LoRA](https://github.com/microsoft/LoRA) - Low-Rank Adaptation for efficient fine-tuning
+- [QLoRA](https://github.com/artidoro/qlora) - Quantized LoRA for efficient training
+- [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl) - Fine-tuning tool for various architectures
+- [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl) - Train transformers with RL
+- [Unsloth](https://github.com/unslothai/unsloth) - 2x faster LLM fine-tuning
+- [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory) - Easy-to-use fine-tuning framework
+
+### 15.9 AI Safety & Evaluation
+- [Red teaming LLMs](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/red-teaming)
+- [OWASP Top 10 for LLMs](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- Model evaluation: [EleutherAI lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
+- [HELM](https://crfm.stanford.edu/helm/) - Holistic Evaluation of Language Models
+- [DeepEval](https://github.com/confident-ai/deepeval) - LLM evaluation framework
+- Content moderation: [OpenAI Moderation](https://platform.openai.com/docs/guides/moderation), [Llama Guard](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/)
+- Bias detection & fairness: [AI Fairness 360](https://aif360.mybluemix.net/)
+- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) - Programmable guardrails for LLM apps
+
+### 15.10 AI Development Platforms & Tools
+- [LangFuse](https://langfuse.com/) - Open-source LLM engineering platform
+- [Helicone](https://www.helicone.ai/) - LLM observability & monitoring
+- [Portkey](https://portkey.ai/) - Full-stack LLMOps platform
+- [Vellum](https://www.vellum.ai/) - LLM product development platform
+- [Humanloop](https://humanloop.com/) - LLM app development & optimization
+- [Braintrust](https://www.braintrust.dev/) - Enterprise-grade AI evaluation
+- [Weights & Biases Prompts](https://wandb.ai/site/prompts) - LLM experimentation
+- [OpenLLMetry](https://github.com/traceloop/openllmetry) - OpenTelemetry for LLMs
 
 ---
 
